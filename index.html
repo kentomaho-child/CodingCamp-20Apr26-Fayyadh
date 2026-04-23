@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="dashboard">
+    <section id="greeting" aria-label="Greeting">
+      <p id="greeting-text"></p>
+      <p id="greeting-time"></p>
+      <p id="greeting-date"></p>
+    </section>
+
+    <section id="timer" aria-label="Focus Timer">
+      <h2>Focus Timer</h2>
+      <div id="timer-display">25:00</div>
+      <div class="timer-controls">
+        <button id="timer-start">Start</button>
+        <button id="timer-stop">Stop</button>
+        <button id="timer-reset">Reset</button>
+      </div>
+    </section>
+
+    <section id="todo" aria-label="To-Do List">
+      <h2>To-Do</h2>
+      <form id="todo-form">
+        <input id="todo-input" type="text" placeholder="Add a task..." aria-label="New task" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <section id="quick-links" aria-label="Quick Links">
+      <h2>Quick Links</h2>
+      <div id="quick-links-list"></div>
+      <form id="quick-links-form">
+        <input id="quick-link-label" type="text" placeholder="Label" aria-label="Link label" />
+        <input id="quick-link-url" type="url" placeholder="https://..." aria-label="Link URL" />
+        <button type="submit">Add Link</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
