@@ -1,3 +1,19 @@
+//dark mode 
+let basic = 100
+let body = document.body
+
+function darkMode() {
+   if (basic != 1) {
+                basic -= 1;
+                body.classList.toggle("dark");
+                plus++;
+            } else {
+                mode.style.display = "none";
+                return
+            }
+}
+
+
 // Feature: to-do-list-dashboard
 
 const GreetingModule = {
@@ -343,3 +359,5 @@ document.addEventListener('DOMContentLoaded', () => {
   TodoModule.init();
   QuickLinksModule.init();
 });
+
+

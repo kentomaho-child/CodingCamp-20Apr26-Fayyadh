@@ -12,6 +12,38 @@ body {
   min-height: 100vh;
 }
 
+.dark {
+  font-family: system-ui, sans-serif;
+  background: #222;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: black ;
+  width: 100% ;
+  padding: 5px;
+  bottom: 0;
+}
+
+nav a{
+  color: white ;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px;
+  outline: none;
+}
+
+nav a:hover{
+  background: white;
+  color: #111111;
+  transition: ease-in 0.1s;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -133,8 +165,6 @@ body {
 }
 
 /* Quick links module */
-#quick-links {}
-
 #quick-links-list {
   display: flex;
   flex-wrap: wrap;
